@@ -6,7 +6,7 @@ def load_library(path)
     "emoticon" => {},
     "meaning" => {}
   }
-  YML.load_file("./lib/emoticons.yml").each |meaning, emoticon| do
+  YML.load_file("./lib/emoticons.yml").each do |meaning, emoticon|
     english,japanese = emoticon
     emoticon["meaning"] = english
     emoticon["meaning"] = japanese
