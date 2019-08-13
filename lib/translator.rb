@@ -10,6 +10,7 @@ def load_library(path)
   file.each do |meaning, emoticon|
     jap, eng = emoticon
     emoticons["get_meaning"][jap] = emoticon
+    emoticon["get_meaning"][eng] = jap
     
   end
   emoticons
