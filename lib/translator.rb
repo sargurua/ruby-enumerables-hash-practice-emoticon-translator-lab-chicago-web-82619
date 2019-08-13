@@ -7,6 +7,9 @@ def load_library(path)
     "meaning" => {}
   }
   file = YAML.load_file(path)
+  file.each do |meaning, emoticon|
+    
+  end
 end
 
 def get_japanese_emoticon
